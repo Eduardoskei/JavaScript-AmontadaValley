@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+    
+    <script>
+
+        const negativoPositivoOuZero = (num) => {
+            if (num > 0){
+                return (`O número ${num} é Positivo.`);
+            }else if (num < 0){
+                return (`O número ${num} é Negativo.`);
+            }else{
+                return ('O número é 0.');
+            }
+        }
+
+        const num = prompt('Digite um número:');
+        console.log(negativoPositivoOuZero(num))
+
+    </script>
+
+</body>
+</html>

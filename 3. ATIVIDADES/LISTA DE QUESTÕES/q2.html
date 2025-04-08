@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    
+    <script>
+
+        const calc = (n1, n2, operacao) => {
+            switch(operacao){
+                case 1:
+                    return n1 + n2;
+                case 2:
+                    return n1 - n2;
+                case 3:
+                    return n1 * n2;
+                case 4:
+                    return n1 / n2;
+                default:
+                    return 'Os parâmetros digitados são inválidos.'
+            }
+        }
+
+        const n1 = parseFloat(prompt('Digite o primeiro número:'));
+        const n2 = parseFloat(prompt('Digite o segundo número:'));
+        const operacao = parseInt(prompt('Escolha a sua operação: [1 - Somar | 2 - Subtrair | 3 - Multiplicar | 4 - Dividir]'));
+
+        console.log(calc(n1, n2, operacao));
+
+    </script>
+
+</body>
+</html>

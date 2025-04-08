@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+    
+    <script>
+
+        const sexo = (valor) => {
+            if (valor === 'F'){
+                return 'Sexo Feminino';
+            }else if (valor === 'M'){
+                return 'Sexo Masculino';
+            }else{
+                return 'Sexo Inválido';
+            }
+        }
+
+        const valor = prompt('Digite a letra do seu sexo:').toUpperCase();
+
+        console.log(sexo(valor));
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    
+    <script>
+
+        const arrayActions = () => {
+            let fruit = ['tomate', 'abacat', 'morango', 'melancia'];
+            
+            const action = parseInt(prompt(`
+            ===================================
+            Lista de Frutas: ${fruit}
+            ===================================
+            1-Adicionar fruta no fim da lista
+            2-Remover a última fruta da lista
+            3-Exibir primeiras N frutas
+            4-Exibir as ultimas N frutas
+            5-Adiconar uma fruta na posição N
+            ===================================
+            Escolha a sua Ação:`));
+
+            switch(action){
+                case 1:
+                    const nameFruit = prompt('Digite o nome da fruta que você quer adicionar:')
+                    fruit.push(nameFruit)
+                    console.log(fruit)
+                    break;
+                case 2:
+                    fruit.pop()
+                    console.log(fruit)
+                    break;
+                case 3:
+                    const numStart = parseInt(prompt('Digite até que elemento você quer visualizar:'))
+                    console.log(fruit.slice(0, numStart))
+                    break;
+                case 4:
+                    const numEnd = parseInt(prompt('Digite até que elemento você quer visualizar:'))
+                    console.log(fruit.slice(-numEnd))
+                    break;
+                case 5:
+                    const add = prompt('Infome o nome da fruta a ser adicionada:')
+                    const postion = parseInt(prompt('Escolha a posição que você quer adiciona-la:'))
+                    fruit.splice(postion - 1, 0, add)
+                    console.log(fruit)
+                    break;
+                default:
+                    console.log("Opção inválida")
+            }
+
+        }
+        
+        console.log(arrayActions())
+    </script>
+
+</body>
+</html>

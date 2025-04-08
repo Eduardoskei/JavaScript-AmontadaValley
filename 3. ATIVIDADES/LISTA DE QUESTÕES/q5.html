@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    
+    <script>
+
+        const calcAVG = (n1, n2, n3, n4) => {
+            const avg = (n1 + n2 + n3 + n4) / 4;
+
+            switch (true){
+                case avg >= 7:
+                    return 'Aluno Aprovado.'
+                case avg < 7 && avg >= 5:
+                    return 'Aluno de Recuperação.'
+                case avg < 5:
+                    return 'Aluno Reprovado.'
+                default:
+                    return 'Dados inválidos'
+            }
+        }
+        
+
+        const n1 = parseFloat(prompt('Digite sua primeira nota:'))
+        const n2 = parseFloat(prompt('Digite sua segunda nota:'))
+        const n3 = parseFloat(prompt('Digite sua terceira nota:'))
+        const n4 = parseFloat(prompt('Digite sua quarta nota:'))
+
+        console.log(`A sua situação é: ${calcAVG(n1, n2, n3, n4)}`)
+    </script>
+</body>
+</html>
