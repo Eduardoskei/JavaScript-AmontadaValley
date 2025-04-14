@@ -8,7 +8,33 @@
 <body>
     
     <script>
+        const descending = (n1, n2, n3) => {
+            if (n1 >= n2 && n1 >= n3) {
+                if (n2 >= n3) {
+                    alert(`A ordem decrescente dos números é: ${n1} ${n2} ${n3}`);
+                } else {
+                    alert(`A ordem decrescente dos números é: ${n1} ${n3} ${n2}`);
+                }
+            } else if (n2 >= n1 && n2 >= n3) {
+                if (n1 >= n3) {
+                    alert(`A ordem decrescente dos números é: ${n2} ${n1} ${n3}`);
+                } else {
+                    alert(`A ordem decrescente dos números é: ${n2} ${n3} ${n1}`);
+                }
+            } else if (n3 >= n1 && n3 >= n2) {
+                if (n1 >= n2) {
+                    alert(`A ordem decrescente dos números é: ${n3} ${n1} ${n2}`);
+                } else {
+                    alert(`A ordem decrescente dos números é: ${n3} ${n2} ${n1}`);
+                }
+            }
+        }
 
+        const n1 = parseFloat(prompt("Digite o primeiro número:"));
+        const n2 = parseFloat(prompt("Digite o segundo número:"));
+        const n3 = parseFloat(prompt("Digite o terceiro número:"));
+
+        descending(n1, n2, n3)
     </script>
 </body>
 </html>

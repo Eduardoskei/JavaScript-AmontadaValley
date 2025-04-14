@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    
+    <script>
+
+            const discountApplied = (salary) => {
+                let newSalary;
+                if (salary <= 1630){
+                    newSalary = salary + (salary * 0.15);
+                    return `O salário de ${salary} recebeu um aumento de 15%, e ficou ${newSalary}`; 
+                }else if (salary > 1630 && salary <= 3000){
+                    newSalary = salary + (salary * 0.1);
+                    return `O salário de ${salary} recebeu um aumento de 10%, e ficou ${newSalary}`; 
+                }else if (salary > 3000 && salary <= 5000){
+                    newSalary = salary + (salary * 0.05);
+                    return `O salário de ${salary} recebeu um aumento de 5%, e ficou ${newSalary}`; 
+                }else if (salary > 500){
+                    newSalary = salary + 100;
+                    return `O salário de ${salary} recebeu um acréscimo de R$100, e ficou ${newSalary}`; 
+                }
+            }
+
+            const salary = parseFloat(prompt('Digite o seu salário:'));
+
+            alert(discountApplied(salary));
+
+    </script>
+
+</body>
+</html>

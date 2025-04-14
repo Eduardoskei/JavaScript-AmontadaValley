@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 9</title>
+</head>
+<body>
+    
+    <script>
+
+        const discountApplied = (price, discount) => {
+            finalPrice = price - (price * (discount/100))
+            return `O Valor de ${price} com desconto de ${discount}, fica: ${finalPrice}`;
+        }
+
+        const price = parseFloat(prompt("Digite o preço do produto:"));
+        const discount = parseFloat(prompt("Digite a porcentagem do desconto a ser aplicado. Sem a %:"));
+
+        alert(discountApplied(price, discount));
+    </script>
+
+</body>
+</html>

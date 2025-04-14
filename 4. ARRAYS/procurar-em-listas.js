@@ -16,20 +16,12 @@ const relacaoAlunoMedia = [alunos, medias];
 
 
 
-// const ExibirNomeENota = (name) => {
-//     if (relacaoAlunoMedia[0].includes(name)) {
-//         const index = relacaoAlunoMedia[0].indexOf(name);
-//         return `O aluno: ${relacaoAlunoMedia[0][index]} teve uma média de ${relacaoAlunoMedia[1][index]}`
-//     }else{
-//         console.log("O Estudante não existe")
-//     }
-// }
-
 const ExibirNomeENota = (name) => {
     if (relacaoAlunoMedia[0].includes(name)) {
-        return `O aluno: ${relacaoAlunoMedia[0][name]} teve uma média de ${relacaoAlunoMedia[1][relacaoAlunoMedia[0].indexOf(name)]}`
+        const index = relacaoAlunoMedia[0].indexOf(name);
+        return `O aluno: ${relacaoAlunoMedia[0][index]} teve uma média de ${relacaoAlunoMedia[1][index]}`
     }else{
-        console.log("O Estudante não existe")
+        return "O Estudante não existe"
     }
 }
 

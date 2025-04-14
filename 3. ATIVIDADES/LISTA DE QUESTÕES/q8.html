@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+</head>
+<body>
+    
+    <script>
+
+        const verificarMedia = () => {
+            const names = [];
+            const grades = [];
+
+            for (let i = 1 ; i <= 4 ; i++){
+                const name = prompt(`Digite o nome dos alunos [${i}/4]:`);
+                const grade = parseFloat(prompt(`Digite a nota dos alunos [${i}/4]:`));
+                names.push(name);
+                grades.push(grade);
+            }
+            
+            const relacaoAlunoMedia = [names, grades] 
+            
+            const name = prompt('Digite o nome do aluno que você quer verificar:')
+
+            if (relacaoAlunoMedia[0].includes(name)) {
+                const index = relacaoAlunoMedia[0].indexOf(name);
+                alert(`O aluno: ${relacaoAlunoMedia[0][index]} teve uma média de ${relacaoAlunoMedia[1][index]}`)
+            }else{
+                alert("O Estudante não existe")
+            }
+
+        }
+
+        verificarMedia()
+    </script>
+
+</body>
+</html>
