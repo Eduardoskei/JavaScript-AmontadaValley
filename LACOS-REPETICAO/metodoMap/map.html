@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Map</title>
+</head>
+<body>
+
+    <script>
+
+        // const numbers = [65, 44, 12, 4];
+        // const newArr = numbers.map(myFunction)
+
+        // function myFunction(num){
+        //     return num * 10
+        // }
+
+
+
+        const names = ['Eduardo', 'João', 'Pedro', 'Carlos Roberto'];
+
+        function toUpperCase(name){
+            return name.toUpperCase();
+        }
+
+        const NAMES = names.map(toUpperCase);
+        alert(NAMES)
+    </script>
+</body>
+</html>

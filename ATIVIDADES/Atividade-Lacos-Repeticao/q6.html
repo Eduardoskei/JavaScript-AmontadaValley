@@ -1,0 +1,36 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    
+    <script>
+
+        const studantSituation = (grade) => {
+            if (grade >= 7){
+                alert(`Parabéns, sua nota foi ${grade} e você está APROVADO`);
+            }else if (grade >= 5 && grade < 7){
+                alert(`Eita, sua nota foi ${grade} e você está em RECUPERAÇÃO`);
+            }else{
+                alert(`Lascou, sua nota foi ${grade} e você está REPROVADO`);
+            }
+        } 
+
+        let grades = [];
+
+        for (let i = 1; i <= 5 ; i++){
+            let grade = parseFloat(prompt(`Digite sua nota: [${i}/5]`));
+            grades.push(grade);
+        }
+
+        grades.forEach(studantSituation);
+
+    </script>
+
+</body>
+</html>
+
+    

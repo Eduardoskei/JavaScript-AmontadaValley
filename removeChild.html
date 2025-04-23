@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeChild</title>
+</head>
+<body>
+    <ul id="lista">
+        <li id="remover">Item 1</li>
+        <li id="remover">Item 2</li>
+        <li id="remover">Item 3</li>
+        <li id="remover">Item 4</li>
+        <li id="remover">Item 5</li>
+    </ul>
+
+    <script>
+        const lista = document.getElementById('lista');
+        const item = document.querySelectorAll('li');
+
+        item.forEach(tag => lista.removeChild(tag));
+
+
+        
+
+
+    </script>
+</body>
+</html>
