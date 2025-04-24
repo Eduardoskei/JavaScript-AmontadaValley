@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+<body>
+    
+    <h1>Desafio 1</h1>
+
+    <h1 class="time">lampada apagada</h1>
+    <img class="img" src="./img/lampada-apagada.webp" width="500px" height="500px">
+    </br>
+    <button class="btn">Clique aqui para acender</button>
+
+    <script>
+
+        const img = document.querySelector('.img');
+
+        const charge = () => {
+            if (img.getAttribute('src') == './img/lampada-apagada.webp'){
+
+                document.querySelector('.time').innerHTML = 'Lampada Acessa';
+                img.setAttribute('src', './img/lampada-acessa.webp');
+                
+            }else{
+                document.querySelector('.time').innerHTML = 'Lampada Apagada';
+                img.setAttribute('src', './img/lampada-apagada.webp');
+            }
+
+        }
+
+        document.querySelector('.btn').addEventListener('click', charge)
+
+    </script>
+
+</body>
+</html>

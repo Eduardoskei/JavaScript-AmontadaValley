@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    
+    <h1>BOTÃO LOGO ABAIXO</h1>
+    <button id="btn">Clique aqui</button>
+    <input type="color">
+
+
+    <script>
+
+        alert('Selecione uma cor e clique no botão');
+        const text = prompt('Digite algo:');
+        
+
+        const insertText = () => {
+            const p = document.createElement('p')
+            p.innerText = text
+            document.body.appendChild(p)
+        }
+
+        const buttonClicked = () => {
+            const color = document.querySelector('input').value;
+            document.body.style.backgroundColor = color;
+
+            if (color === '#000000') {
+                document.querySelector('h1').style.color = '#fff'
+            }else{
+                document.querySelector('h1').style.color = '#000'
+            }
+
+            insertText()
+        }
+
+        document.querySelector('#btn').addEventListener('click', buttonClicked);
+    </script>
+
+</body>
+</html>

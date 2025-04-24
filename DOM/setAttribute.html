@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute</title>
+</head>
+<body>
+    
+    <img src="https://via.placehold.co/300" id="foto">
+
+
+    <script>
+
+        const img = document.getElementById('foto');
+        img.setAttribute('src', 'https://placehold.co/500');
+        console.log(img.getAttribute('src'));
+        console.log(img.getAttribute('id'));
+
+    </script>
+
+</body>
+</html>

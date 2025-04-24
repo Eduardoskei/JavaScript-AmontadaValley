@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challege 02</title>
+</head>
+<body>
+
+    <h1>Contador</h1>
+
+    <div class="cont">0</div>
+
+    <br>
+
+    <button>Clique para incrementar</button>
+
+    <script>
+
+        let cont = 0;
+        
+        const incrementCont = () => {
+            cont += 1
+            document.querySelector('.cont').innerHTML = cont;
+        }
+
+        document.querySelector('button').addEventListener('click', incrementCont);
+
+    </script>
+</body>
+</html>
